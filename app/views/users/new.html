@@ -1,0 +1,20 @@
+<form action="/users" method="post">
+	<h2>Create a user</h2>
+	<br><br>
+	<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+	Name:
+	<input type="text" id="Name" name = "user[name]">
+	<br><br>
+	Email:
+	<input type="text" id="Email" name = "user[email]">
+	<br><br>
+	Password:
+	<input type="password" id="Password" name = "user[password]">
+	<br><br>
+	Confirm password:
+	<input type="password" id="Password_Confirmation" name = "user[password_confirmation]">
+	<br><br>
+	<input type="submit" name="Join" value="Join">
+</form>
+<br>
+<a href='/login'>Click here to login</a>
